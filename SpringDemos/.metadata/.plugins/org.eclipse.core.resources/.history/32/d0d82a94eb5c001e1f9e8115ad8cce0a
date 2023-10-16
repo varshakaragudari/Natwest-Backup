@@ -1,0 +1,27 @@
+package com.example.jwtsec.com.example.jwtsec;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
+
+import org.springframework.stereotype.Service;
+
+@Service//
+public class UserService {
+private List<User> store=new ArrayList<>();
+public UserService() {
+	
+	store.add(new User(1,"Durgesh","abcc@gmail.com"));
+
+	store.add(new User(2,"Durga","abcc@gmail.com"));
+
+	store.add(new User(3,"Duh","abcc@gmail.com"));
+	//store.add(new User(1,"Durgesh","abcc@gmail.com");
+	//store.add(new User(UUID.randomUUID().toString()));
+	//store.add(new User(UUID.randomUUID().toString()));
+}
+public List<User> getUsers(){
+	return this.store;
+}
+
+}

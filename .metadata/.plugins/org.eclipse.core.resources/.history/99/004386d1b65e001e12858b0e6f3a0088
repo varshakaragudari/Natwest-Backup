@@ -1,0 +1,12 @@
+package com.example.demo;
+
+import org.springframework.kafka.annotation.KafkaListener;
+
+public class consumer {
+
+	@KafkaListener({"test-topic"})
+	public void showMessage(String message)
+	{
+		
+	}
+}

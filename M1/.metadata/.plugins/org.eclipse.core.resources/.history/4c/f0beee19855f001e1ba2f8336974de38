@@ -1,0 +1,8 @@
+package com.Natwest.User;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClient
+public interface contactFeign {
+
+}

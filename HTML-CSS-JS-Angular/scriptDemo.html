@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="p1">I am a para</p>
+    <button onclick="disp()">Click Here</button>
+    <!-- <script src="./ScriptDemo.js"></script> -->
+</body>
+
+<script>
+
+    const person = {
+        firstName: "John",
+        lastName: "Doe",
+        age: 50,
+        eyeColor: "blue",
+        showfullName: function () {
+            return this.firstName + " " + this.lastName;
+        },
+        showAge: function () {
+            return this.age;
+        }
+    };
+
+    
+    function disp() {
+
+        document.getElementById("p1").innerHTML = person.showfullName()+ " is "+person.showAge()+" years old ";
+        console.log(person)
+    }
+</script>
+
+</html>

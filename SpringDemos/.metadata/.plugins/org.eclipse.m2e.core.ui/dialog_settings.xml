@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\LENOVO\Desktop\AllState\EurekaServer\EurekaServerDemo"/>
+			<item value="C:\Users\LENOVO\Downloads\Angular Hackathon\spring-unit-testing-with-junit-and-mockito-master"/>
+			<item value="C:\Users\LENOVO\Downloads\Angular Hackathon\04.Mockito-Introduction-In-5-Steps"/>
+			<item value="C:\Users\LENOVO\Downloads\Angular Hackathon\maincourse_java_jfse_mc04_outcome03_01-master"/>
+			<item value="C:\Users\LENOVO\Downloads\Angular Hackathon\microservices\microservices\apigateway\apigateway\apigateway"/>
+			<item value="C:\Users\LENOVO\Desktop\spring-boot-twilio-main"/>
+			<item value="C:\Users\LENOVO\Desktop\com.example.jwtsec.zip_expanded\com.example.jwtsec"/>
+			<item value="C:\Users\LENOVO\Desktop\spring-security-jwt-example-master"/>
+			<item value="C:\Users\LENOVO\Desktop\SpringSecurity\SpringSecurity"/>
+			<item value="C:\Users\LENOVO\Desktop\Java Example\Java Example\AdvJava\jwtauthentication"/>
+			<item value="C:\Users\LENOVO\Downloads\Angular Hackathon\spring-security-jwt-example-master"/>
+			<item value="C:\Users\LENOVO\Downloads\Angular Hackathon\spring-security-jwt-example-master\spring-security-jwt-example-master"/>
+			<item value="C:\Users\LENOVO\Downloads\Angular Hackathon\spring-swagger-master\spring-swagger-master"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

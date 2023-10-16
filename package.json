@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "react-scripts": "^5.0.1"
+  },
+  "name": "natwest-batch8",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

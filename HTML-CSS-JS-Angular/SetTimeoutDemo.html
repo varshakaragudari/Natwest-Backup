@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <p id="p1">  </p>
+    <p id="p2">  </p>
+    <script>
+
+        function showAlpha(){
+            console.log("Alpha output started... ")
+            setTimeout(() => {
+                    for(let  str=100;str<130;str++)
+                    {
+                        
+                       console.log("Alpha output "+str)
+                    }
+            }, 3000);
+        }
+
+        function showNumbers(){
+            console.log("Numbers output started....")
+            setTimeout(() => {
+                for(let str=1;str<30;str++)
+                    {
+                        console.log("Number output "+str)
+                    }
+            },1000);
+        }
+
+        showAlpha();
+        showNumbers()
+    </script>
+</body>
+</html>

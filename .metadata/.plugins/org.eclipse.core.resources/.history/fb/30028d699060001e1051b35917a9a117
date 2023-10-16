@@ -1,0 +1,17 @@
+package com.Natwest.Book.Repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
+
+import com.Natwest.Book.Model.Book;
+
+public interface BookRepo extends CrudRepository<Book, Integer> {
+
+	List<Book> findByBookName(String str);
+	
+	List<Book> findByPrice(int x);
+}

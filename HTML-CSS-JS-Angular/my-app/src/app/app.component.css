@@ -1,0 +1,9 @@
+.footer
+{
+    position: absolute;
+    height:100px;
+    bottom:0;
+    background-color: aqua;
+    width: 100%;
+    color: red;
+}

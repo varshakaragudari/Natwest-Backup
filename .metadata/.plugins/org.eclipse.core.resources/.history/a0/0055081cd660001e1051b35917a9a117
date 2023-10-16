@@ -1,0 +1,39 @@
+package com.Natwest.Book;
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.Natwest.Book.BookService.BookService;
+import com.Natwest.Book.Model.Book;
+import com.Natwest.Book.Repository.BookRepo;
+
+@SpringBootTest
+class BookJpaApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+	@Mock
+	BookRepo bp;
+	
+	@InjectMocks
+	BookService bs;
+	
+	
+	List<Book> booklist;
+	@Test
+	
+	public void testall()
+	{
+		List<Book> b=new ArrayList<Book>();
+		b.add(new Book(1,"f",null));
+	}
+	
+}

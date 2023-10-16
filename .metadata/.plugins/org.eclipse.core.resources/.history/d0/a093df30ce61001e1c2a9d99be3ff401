@@ -1,0 +1,32 @@
+package com.javatpoint;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.bind.annotation.GetMapping;
+
+
+@SpringBootApplication
+public class jpademoApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(jpademoApplication.class, args);
+		System.out.println("hi");
+	}
+	
+	@GetMapping("/hello")
+	public String hello()
+	{
+		return "Welcome to docker tutorial!!";
+	}
+//	 @Bean
+//	  public FilterRegistrationBean < SimpleFilter > filterRegistrationBean() {
+//	   FilterRegistrationBean < SimpleFilter > registrationBean = new FilterRegistrationBean();
+//	   SimpleFilter simpleFilter = new SimpleFilter();
+//
+//	   registrationBean.setFilter(simpleFilter);
+//	   registrationBean.addUrlPatterns("/bookapi/*");
+//	   return registrationBean;
+//	  }
+}

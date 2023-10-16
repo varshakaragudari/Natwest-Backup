@@ -1,0 +1,13 @@
+package com.mongo;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.data.mongodb.repository.Query;
+
+import java.util.*;
+public interface productRepo extends JpaRepository<Product, String> {
+
+	List<Product> getByPrice();
+	
+//	@Query(value="{'price':{ $gt : ?0 , $lt : ?1}}")
+//	List<Product> getBetween(int min,int max);
+}

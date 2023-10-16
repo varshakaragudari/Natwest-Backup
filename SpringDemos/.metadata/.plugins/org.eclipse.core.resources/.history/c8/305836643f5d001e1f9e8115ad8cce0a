@@ -1,0 +1,6 @@
+# spring-boot-twilio
+#localhost:8080/router/sendOTP---post method
+#{
+#    "phoneNumber":"+919916196336",
+#    "userName":"varsha"
+#}

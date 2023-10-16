@@ -1,0 +1,5 @@
+Docker Installation steps
+
+1. on cmd--> wsl --install
+
+2. Docker desktop install

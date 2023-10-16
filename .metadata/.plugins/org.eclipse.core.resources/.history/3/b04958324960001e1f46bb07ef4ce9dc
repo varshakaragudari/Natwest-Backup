@@ -1,0 +1,4 @@
+FROM openjdk:17
+MAINTAINER "varsha"
+COPY target/JPADemo-0.0.1-SNAPSHOT.jar JPADemo-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ["java","-jar","/JPADemo-0.0.1-SNAPSHOT.jar"]

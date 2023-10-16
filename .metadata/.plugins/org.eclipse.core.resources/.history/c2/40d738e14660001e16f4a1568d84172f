@@ -1,0 +1,21 @@
+version: "3"
+services:
+  employee-jdbc:
+    image: JPADemo-0.0.1-SNAPSHOT
+    ports:
+      - "8080:8080"
+    networks:
+      - employee-mysql
+    depends_on:
+      - mysqldb
+ 
+  mysqldb:
+    image: mysql:8
+    networks:
+      - employee-mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=sample  
+
+networks:
+  employee-mysql: 

@@ -1,0 +1,72 @@
+<!-- <p #temp>parent </p>
+<button (click)="showMessage(temp)">click here </button>
+<app-compone [message]="fromParent">
+    <p #tempParent>Content Projected : {{title}} </p>
+</app-compone>
+
+ -->
+
+
+ <!-- <ul>
+    <li *ngFor="let x of users">{{x.title}}--{{x.id}}</li>
+ </ul>
+
+
+<button (click)="saveData()"> save Data </button> -->
+
+
+
+
+
+
+
+
+<!-- <app-reactivedemo></app-reactivedemo>
+
+<input type="text" (focus)="0">
+
+<app-child (updateDataEvent)="updateData($event)"></app-child> 
+<app-my-header [item1]="title"></app-my-header>
+ <ul>
+    <li  *ngFor="let item of users">
+        {{item.id}}---{{item.title}}
+    </li>
+</ul>  
+<button (click)="saveData()">clcik to save </button> 
+
+ <ul>
+    <li *ngFor="let x of data">
+    {{x.name}}--{{x.email}}</li>
+</ul>   
+<button (click)="show()">clcik to save </button>
+<app-footer class="footer"></app-footer> 
+ <button>This is start of app </button>-->
+ <div class="well">
+    <ul class="query-list">
+      <li class="first">apples</li>
+      <li class="second">oranges</li>
+      <li class="third">bananas</li>
+      <li class="fourth">more apples</li>
+    </ul>
+    <div class="query-button">
+      <button class="btn btn-default"><span>Save Form</span></button>
+    </div>
+  </div>
+<br>
+<a routerLink="about">About</a>
+<br>
+ 
+<br>
+<a routerLink="home/1">first Home </a>
+<br>
+<a routerLink="home/2">second Home </a>
+<br>
+<a routerLink="">no routes  </a>
+<br>
+<br>
+<button (click)="logIn()">LogIn</button>
+<button (click)="logOut()">LogOut </button>
+<router-outlet></router-outlet>
+<button>This is end of app </button>  
+
+

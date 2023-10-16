@@ -1,0 +1,44 @@
+package com.Natwest.Book.Repository;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.Natwest.Book.Model.Book;
+
+@Service
+public class BookService {
+
+	@Autowired
+	BookRepo bk;
+
+	public String saveBook(Book b) {
+		// TODO Auto-generated method stub
+		bk.save(b);
+		return "Saved";
+	}
+
+	public Optional<Book> getBookById(int id) {
+		// TODO Auto-generated method stub
+		
+		return bk.findById(id);
+	}
+
+	public List<Book> getAllBooks() {
+		// TODO Auto-generated method stub
+		return bk.findAll();
+	}
+
+//	public List<Book> getBookByName(String str) {
+//		// TODO Auto-generated method stub
+//		return bk.findByBookName(str);
+//	}
+//
+//	public List<Book> findByPrice(int price) {
+//		// TODO Auto-generated method stub
+//		return bk.findByPrice(price);
+//	}
+	
+}

@@ -1,0 +1,14 @@
+package com.Natwest.Book;
+
+
+import org.junit.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class BookJpaApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}

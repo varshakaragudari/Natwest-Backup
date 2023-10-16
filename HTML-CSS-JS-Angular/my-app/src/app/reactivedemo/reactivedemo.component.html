@@ -1,0 +1,6 @@
+<form [formGroup]="loginform" (ngSubmit)="getData()">
+<input type="text" name="user " id=""  formControlName="control1">
+<span *ngIf="control1 && control1.errors">This input field is not valid </span>
+<input type="password" name="pass" id=""  formControlName="control2">
+<button>Login</button>
+</form>

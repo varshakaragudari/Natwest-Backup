@@ -1,0 +1,43 @@
+package com.Natwest.Book;
+
+
+import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.when;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.Natwest.Book.BookService.BookService;
+import com.Natwest.Book.Model.Book;
+import com.Natwest.Book.Repository.BookRepo;
+
+@SpringBootTest(classes= {ServiceMockitoTest.class})
+public class ServiceMockitoTest {
+	@Mock
+	BookRepo bkre;
+	
+	@InjectMocks
+	BookService bs;
+	
+	public List<Book> booklist;
+	@Test
+	public void test_getAllBooks()
+	{
+		List<Book> booklist=new ArrayList<Book>();
+		booklist.add(new Book(1,"dv", 1000));
+		booklist.add(new Book(2,"book2",200));
+		
+		Mockito.when(bkre.findAll()).thenReturn(booklist);
+		System.out.println(Mockito.when(bk.findAll()).thenReturn(booklist));
+		assertEquals(2,bs.getAllBooks().size());
+	}
+	
+	
+}
